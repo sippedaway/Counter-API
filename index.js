@@ -38,10 +38,6 @@ async function initializeDB() {
 }
 initializeDB();
 
-app.get('/', (req, res) => {
-  res.send("Counter API is running!");
-});
-
 app.get('/create/:rootname/:password', async (req, res) => {
   const { rootname, password } = req.params;
   try {
