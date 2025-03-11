@@ -185,6 +185,7 @@ Adds +1 to the Count of a branch inside a root, and then returns the new Count.
 Variables:
 - `:ROOTNAME` - your root name
 - `:KEY` - the authentication key token
+- `:BRANCHNAME` - the name for your branch
 
 </details>
 
@@ -201,10 +202,9 @@ Want to have your own project mentioned here? **Contact me [here](#contact)!**
 - [sipped](https://github.com/sippedaway)
 
 Support me and get early access to Counter-API (and all my other projects) updates, changes and early looks __for as low as $3__: https://ko-fi.com/sipped
-- `:BRANCHNAME` - the name for your branch
 
 ## Contact
-Personal email - say hi, questions, feedback: hello@sipped.org
-Business email - legal, business inquiries, partnership: business@sipped.org
+- Personal email - say hi, questions, feedback: hello@sipped.org
+- Business email - legal, business inquiries, partnership: business@sipped.org
 
 Issue? Leave a GitHub Issue, thanks!
