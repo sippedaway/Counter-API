@@ -2,12 +2,21 @@ const express = require('express');
 const { Pool } = require('pg');
 const crypto = require('crypto');
 const cors = require('cors');
+const rateLimit = require('express-rate-limit');
 
 const app = express();
 app.use(cors());
 const port = 3000;
 
 const DATABASE_URL = process.env.DATABASE_URL; 
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: { error: "Too many requests, please try again later." }
+});
+
+app.use(limiter);
 
 const pool = new Pool({
   connectionString: DATABASE_URL,
